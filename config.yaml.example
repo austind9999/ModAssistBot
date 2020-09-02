@@ -1,0 +1,7 @@
+User Agent: 'ModAssistBot run by /u/owner_username'
+Username: 'username'
+Password: 'modassistbot'
+Client ID: 'client_id'
+Client Secret: 'client_secret'
+Subreddits:
+    - 'some_subreddit'
