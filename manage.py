@@ -143,14 +143,14 @@ class Bot(object):
     def log(self, subreddit, msg):
         if not self.logging_enabled:
             return
-        logs_page = self.r.subreddit(subreddit).wiki["modassistbot_logs_sep2020"]
+        logs_page = self.r.subreddit(subreddit).wiki["modassistbot_logs_oct2020"]
         try:
             logs_content = logs_page.content_md
         except TypeError:
             logs_content = ""
         except NotFound:
             logging.warning(
-                "r/%s/wiki/modassistbot_logs_sep2020 not found, disabling logging",
+                "r/%s/wiki/modassistbot_logs_oct2020 not found, disabling logging",
                 subreddit,
             )
             self.logging_enabled = False
